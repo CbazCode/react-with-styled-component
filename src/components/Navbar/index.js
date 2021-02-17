@@ -13,14 +13,14 @@ import {
 
 import {FaBars} from 'react-icons/fa'
 
-export const Navbar = () => {
+export const Navbar = ({toggle}) => {
 
     return (
         <>
             <Nav>
                 <NavBarContainer>
                     <NavLogo to = '/'>dollar</NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick = {toggle}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>
