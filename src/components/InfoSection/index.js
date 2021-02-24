@@ -26,7 +26,10 @@ export const InfoSection = ({
     description,
     buttonLabel,
     img,
-    alt
+    alt,
+    primary,
+    dark,
+    dark2
 }) => {
     return (
         <>
@@ -39,7 +42,16 @@ export const InfoSection = ({
                             <Heading lightText = {lightText}>{headline}</Heading>
                             <Subtitle darkText = {darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button primary = 'false' dark = 'true'to = 'home'>{buttonLabel}</Button>
+                                <Button
+                                    smooth = {true}
+                                    duration ={500}
+                                    spy={true}
+                                    exact = "true"
+                                    offset = {-80}
+                                    primary = {primary ? 1 : 0 } 
+                                    dark = {dark ? 1: 0}
+                                    dark2 = {dark2 ? 1: 0}
+                                    to = 'home'>{buttonLabel}</Button>
                             </BtnWrap>
                         </TextWrapper>
                         </Column1>
