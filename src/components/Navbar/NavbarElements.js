@@ -56,6 +56,7 @@ export const MobileIcon = styled.div`
     }
 `;
 
+
 export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
@@ -81,7 +82,7 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
     
 
-    &:active {
+    &.active {
         border-bottom: 3px solid #01bf71;
     }
 `;
